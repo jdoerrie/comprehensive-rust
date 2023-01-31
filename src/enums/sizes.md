@@ -17,20 +17,8 @@ enum Foo {
     B,
 }
 
-#[repr(u32)]
-enum Bar {
-    A,  // 0
-    B = 10000,
-    C,  // 10001
-}
-
 fn main() {
     dbg_size!(Foo);
-    dbg_size!(Bar);
-    dbg_size!(bool);
-    dbg_size!(Option<bool>);
-    dbg_size!(&i32);
-    dbg_size!(Option<&i32>);
 }
 ```
 
